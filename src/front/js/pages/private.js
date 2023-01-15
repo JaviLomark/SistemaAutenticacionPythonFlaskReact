@@ -10,6 +10,7 @@ export const Private = () => {
     const tokenOBJ = localStorage.token;
     if (!tokenOBJ) {
       navigate("/login");
+      return;
     }
     const tokenData = JSON.parse(tokenOBJ);
 
